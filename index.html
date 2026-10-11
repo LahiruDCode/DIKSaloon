@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIK Beauty Salon | Ladies & Gents | Nittambuwa</title>
+  <meta name="description" content="DIK Beauty Salon — Premium Ladies & Gents salon in Nittambuwa. Hair cutting, styling, coloring, facials, beard grooming and more. Book your appointment today." />
+  <meta name="keywords" content="DIK salon, beauty salon Nittambuwa, hair salon, ladies salon, gents salon, facials, hair coloring" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated Background Particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ======= NAVBAR ======= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="nav-logo">
+        <span class="logo-dik">DIK</span>
+        <span class="logo-text">Beauty Salon</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#services" class="nav-link" data-section="services">Services</a>
+        <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        <a href="tel:0778059914" class="nav-cta" id="nav-cta-btn">Book Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero.jpg" alt="DIK Beauty Salon Interior" class="hero-img" id="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-title-line">Redefine</span>
+        <span class="hero-title-line gradient-text">Your Beauty</span>
+      </h1>
+      <p class="hero-subtitle">
+        Premium grooming &amp; beauty experiences crafted for <em>Ladies &amp; Gents</em> —
+        where modern artistry meets timeless elegance.
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary" id="hero-explore-btn">Explore Services</a>
+        <a href="tel:0778059914" class="btn-ghost" id="hero-book-btn">
+          <span class="btn-icon">📞</span> Book Now
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Services</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Expert Teams</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Premium Quality</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" id="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======= SERVICES ======= -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+        <p class="section-sub">Tailored experiences for every individual — precision, artistry, and luxury in every visit.</p>
+      </div>
+
+      <div class="service-tabs">
+        <button class="tab-btn active" id="tab-gents" data-tab="gents">
+          <span class="tab-icon">♂</span> Gents
+        </button>
+        <button class="tab-btn" id="tab-ladies" data-tab="ladies">
+          <span class="tab-icon">♀</span> Ladies
+        </button>
+      </div>
+
+      <!-- Gents Services -->
+      <div class="tab-content active" id="tab-content-gents">
+        <div class="services-layout">
+          <div class="services-image-col">
+            <div class="service-img-frame">
+              <img src="images/mens.jpg" alt="Gents Grooming at DIK Salon" id="gents-img" />
+              <div class="img-glow"></div>
+            </div>
+          </div>
+          <div class="services-grid-col">
+            <div class="service-card" id="svc-haircut">
+              <div class="service-icon">✂️</div>
+              <div class="service-info">
+                <h3>Hair Cutting</h3>
+                <p>Precision cuts tailored to your face shape and lifestyle — from classic to contemporary fades.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-hairstyle">
+              <div class="service-icon">💇</div>
+              <div class="service-info">
+                <h3>Hair Styling</h3>
+                <p>Expert styling with premium products — textured, slicked, or casual, we've got you covered.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-beard-cut">
+              <div class="service-icon">🪒</div>
+              <div class="service-info">
+                <h3>Beard Cutting</h3>
+                <p>Sharp, defined beard trims to frame your face with clean lines and perfect symmetry.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-beard-style">
+              <div class="service-icon">🧔</div>
+              <div class="service-info">
+                <h3>Beard Styling</h3>
+                <p>Shape and sculpt your beard with precision — from stubble to full groomed looks.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-cleanup-m">
+              <div class="service-icon">✨</div>
+              <div class="service-info">
+                <h3>Clean-ups</h3>
+                <p>Refreshing skin clean-ups that remove impurities and leave your skin glowing and clear.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-facial-m">
+              <div class="service-icon">🧖</div>
+              <div class="service-info">
+                <h3>Facials</h3>
+                <p>Revitalizing facial treatments designed for men's skin — de-stress, hydrate, and glow.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-color-m">
+              <div class="service-icon">🎨</div>
+              <div class="service-info">
+                <h3>Hair Coloring</h3>
+                <p>Bold highlights, full color, or subtle tones — personalized hair color for every style.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ladies Services -->
+      <div class="tab-content" id="tab-content-ladies">
+        <div class="services-layout">
+          <div class="services-image-col">
+            <div class="service-img-frame">
+              <img src="images/womens.jpg" alt="Ladies Beauty at DIK Salon" id="ladies-img" />
+              <div class="img-glow"></div>
+            </div>
+          </div>
+          <div class="services-grid-col">
+            <div class="service-card" id="svc-hair-color-l">
+              <div class="service-icon">🎨</div>
+              <div class="service-info">
+                <h3>Hair Coloring</h3>
+                <p>Vibrant balayage, ombré, highlights and full colors using premium, hair-safe products.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-facial-l">
+              <div class="service-icon">💆</div>
+              <div class="service-info">
+                <h3>Facials</h3>
+                <p>Bespoke facial treatments — anti-aging, hydration, brightening — for radiant, healthy skin.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-cleanup-l">
+              <div class="service-icon">✨</div>
+              <div class="service-info">
+                <h3>Clean-ups</h3>
+                <p>Deep cleansing rituals to purify your skin, minimize pores, and restore your natural glow.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-haircut-l">
+              <div class="service-icon">✂️</div>
+              <div class="service-info">
+                <h3>Hair Cutting &amp; Styling</h3>
+                <p>From precision bobs to flowing layers — haircuts and styling that bring out your best look.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-treatment-l">
+              <div class="service-icon">💅</div>
+              <div class="service-info">
+                <h3>Hair Treatments</h3>
+                <p>Deep conditioning, keratin, and protein treatments to nourish and restore your hair's vitality.</p>
+              </div>
+            </div>
+            <div class="service-card" id="svc-makeup-l">
+              <div class="service-icon">💄</div>
+              <div class="service-info">
+                <h3>Makeup &amp; Beauty</h3>
+                <p>Professional makeup for every occasion — everyday glam to special events and bridal looks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= GALLERY ======= -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">The <span class="gradient-text">Experience</span></h2>
+        <p class="section-sub">Step inside the world of DIK — where every space and every detail is designed for you.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--large" id="gallery-1">
+          <img src="images/hero.jpg" alt="DIK Salon Futuristic Interior" />
+          <div class="gallery-overlay"><span>Salon Interior</span></div>
+        </div>
+        <div class="gallery-item" id="gallery-2">
+          <img src="images/mens.jpg" alt="Men's Grooming at DIK" />
+          <div class="gallery-overlay"><span>Men's Grooming</span></div>
+        </div>
+        <div class="gallery-item" id="gallery-3">
+          <img src="images/womens.jpg" alt="Women's Styling at DIK" />
+          <div class="gallery-overlay"><span>Ladies Styling</span></div>
+        </div>
+        <div class="gallery-item" id="gallery-4">
+          <img src="images/facial.jpg" alt="Facial Treatment at DIK" />
+          <div class="gallery-overlay"><span>Facial Treatment</span></div>
+        </div>
+        <div class="gallery-item gallery-item--wide" id="gallery-5">
+          <img src="images/about.jpg" alt="DIK Salon Reception" />
+          <div class="gallery-overlay"><span>Premium Reception</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-image-col">
+          <div class="about-img-frame">
+            <img src="images/about.jpg" alt="About DIK Beauty Salon" id="about-img" />
+            <div class="about-img-badge">
+              <span class="badge-icon">⭐</span>
+              <span>Premium Salon</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content-col">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title">The Future of <span class="gradient-text">Beauty</span></h2>
+          <p class="about-desc">
+            DIK Beauty Salon is Nittambuwa's premier destination for luxury grooming and beauty.
+            We blend cutting-edge techniques with a warm, welcoming atmosphere — creating a space
+            where every client feels like royalty.
+          </p>
+          <p class="about-desc">
+            Our expert team of stylists and beauty professionals are dedicated to bringing out
+            your best self. From precision haircuts and beard artistry for gents, to transformative
+            color treatments and rejuvenating facials for ladies — every service is performed with
+            passion and precision.
+          </p>
+          <div class="about-pillars">
+            <div class="pillar" id="pillar-1">
+              <div class="pillar-icon">🎯</div>
+              <div>
+                <h4>Precision</h4>
+                <p>Every cut, color, and treatment is crafted with expert-level precision.</p>
+              </div>
+            </div>
+            <div class="pillar" id="pillar-2">
+              <div class="pillar-icon">💎</div>
+              <div>
+                <h4>Premium Quality</h4>
+                <p>We use only the finest products to protect and enhance your hair and skin.</p>
+              </div>
+            </div>
+            <div class="pillar" id="pillar-3">
+              <div class="pillar-icon">🌸</div>
+              <div>
+                <h4>Welcoming Ambiance</h4>
+                <p>A salon experience that feels luxurious, comfortable, and truly yours.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" id="about-contact-btn">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Reach Us</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-sub">Ready to experience the DIK difference? Reach out to book your appointment or just say hello.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info-col">
+          <div class="contact-card" id="contact-phone-1">
+            <div class="contact-card-icon">📞</div>
+            <div class="contact-card-body">
+              <h4>Call or WhatsApp</h4>
+              <a href="tel:0778059914" class="contact-link">077 805 9914</a>
+              <a href="tel:0742519347" class="contact-link">074 251 9347</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location">
+            <div class="contact-card-icon">📍</div>
+            <div class="contact-card-body">
+              <h4>Find Us</h4>
+              <p>Old Super Market, Nittambuwa</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-hours">
+            <div class="contact-card-icon">🕐</div>
+            <div class="contact-card-body">
+              <h4>Opening Hours</h4>
+              <p>Monday – Saturday: 8:00 AM – 8:00 PM</p>
+              <p>Sunday: 9:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-cta-row">
+            <a href="tel:0778059914" class="btn-primary" id="cta-call-1">📞 077 805 9914</a>
+            <a href="tel:0742519347" class="btn-ghost" id="cta-call-2">📞 074 251 9347</a>
+          </div>
+        </div>
+        <div class="contact-form-col">
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <h3 class="form-title">Send a Message</h3>
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label for="form-phone">Phone Number</label>
+              <input type="tel" id="form-phone" name="phone" placeholder="Your contact number" required />
+            </div>
+            <div class="form-group">
+              <label for="form-service">Service Interested In</label>
+              <select id="form-service" name="service">
+                <option value="">Select a service...</option>
+                <optgroup label="Gents">
+                  <option>Hair Cutting</option>
+                  <option>Hair Styling</option>
+                  <option>Beard Cutting</option>
+                  <option>Beard Styling</option>
+                  <option>Clean-up (Gents)</option>
+                  <option>Facial (Gents)</option>
+                  <option>Hair Coloring (Gents)</option>
+                </optgroup>
+                <optgroup label="Ladies">
+                  <option>Hair Coloring (Ladies)</option>
+                  <option>Facial (Ladies)</option>
+                  <option>Clean-up (Ladies)</option>
+                  <option>Hair Cutting &amp; Styling (Ladies)</option>
+                  <option>Hair Treatment</option>
+                  <option>Makeup &amp; Beauty</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message (Optional)</label>
+              <textarea id="form-message" name="message" rows="3" placeholder="Any special requests or preferred time?"></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="form-submit-btn">Send Message ✦</button>
+            <div class="form-success" id="form-success" style="display:none;">
+              ✅ Thank you! We'll reach out to confirm your booking soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-dik">DIK</span>
+          <span class="logo-text">Beauty Salon</span>
+        </div>
+        <p>Ladies &amp; Gents | Nittambuwa</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:0778059914">077 805 9914</a>
+        <a href="tel:0742519347">074 251 9347</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DIK Beauty Salon. All rights reserved. Crafted with ✦ passion.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
